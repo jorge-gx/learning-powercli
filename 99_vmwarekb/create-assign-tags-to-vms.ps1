@@ -3,6 +3,8 @@
 # This script help you to create New Tags along with the new Tag Category if not existing.
 # Script can assign the tags to the all the VMs present in vSphere Environment.
 
+# this uses a text file as input
+
 $FileContent = Get-Content c:\scripts\vmnames.txt
 
 $uTagName = Read-Host "Enter VM Tag Name"
